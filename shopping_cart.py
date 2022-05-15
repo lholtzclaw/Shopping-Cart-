@@ -27,6 +27,9 @@ def shopping_cart(cart1 = {}):
             item = input("What would you like to add to your cart? ").title()
             price = float(input("What is the individual price of the item selected? "))
             cart1[item] = price 
+            if ask:
+                print(f"{item} has been added to your cart.")
+
         elif ask == 'delete':
             remove = input("What item would you like to delete? ").title()
             if remove in cart1: 
