@@ -57,11 +57,11 @@ def shopping_cart(cart1 = {}):
         print(f"{item} x ${price}")
         
 
-    
+    print(f"Number of items selected: {len(cart1.items())}")
     print(f"Your total is ${total_price:.2f}.\n")    
     print("Have a wonderful day! ")
 
-    
+  
 
 
             
